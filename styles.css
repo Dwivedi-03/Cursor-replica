@@ -175,7 +175,7 @@ section {
 
 .text-container {
     text-align: left;
-    max-width: 80vh;
+    max-width: 60ch;
     margin-bottom: 3.5rem;
 }
 
@@ -190,20 +190,20 @@ section {
     width: fit-content;
     gap: 1rem;
     background-color: var();
+
+    .download-btn {
+        padding: 0.8rem 1.5rem;
+        border-radius: 2rem;
+        background-color: var(--text-color);
+        color: var(--bg-color);
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+    }
 }
 
 .btn-group div {
     display: inline-flex;
-}
-
-.download-btn {
-    padding: 0.8rem 1.5rem;
-    border-radius: 2rem;
-    background-color: var(--text-color);
-    color: var(--bg-color);
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
 }
 
 .media-container {
@@ -344,7 +344,7 @@ section {
 .feature-heading {
     text-align: left;
     max-width: 50ch;
-    margin-bottom: 1.5rem;
+    margin: 2rem 0;
 }
 
 .feature-heading h2 {
@@ -358,7 +358,7 @@ section {
     gap: 0.7rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     align-items: stretch;
-    padding-bottom: 5rem;
+    margin-bottom: 2.5rem;
 }
 
 .feature-cards .card-container {
@@ -421,4 +421,250 @@ section {
     object-fit: cover;
     pointer-events: none;
     border-radius: 4px;
+}
+
+.testimonial-heading {
+    text-align: center;
+    padding-bottom: 3rem;
+    margin: 0 auto;
+}
+
+.testimonial-heading h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.testimonials {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.testimonial-card {
+    border-radius: 4px;
+    background-color: #1B1913;
+    padding: 1rem;
+    min-height: 200px;
+    height: 100%;
+}
+
+.testimonial-card figure {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.testimonial-card figure blockquote {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.card-content {
+    margin-top: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.card-content img {
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.testimonial-card figure figcaption div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.testimonial-card figure figcaption span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #999896;
+}
+
+.changelog-heading h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.changelog-cards {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    height: 100%;
+    margin-bottom: 2rem;
+}
+
+.changelog-cards article {
+    background-color: #1B1913;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.changelog-cards article a {
+    text-decoration: none;
+}
+
+section .container {
+    article {
+        padding: 1rem;
+        height: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+    a .top {
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        color: #999896;
+
+        span {
+            padding: 2px 8px;
+            font-size: 14px;
+            border: 1px solid #999896;
+            border-radius: 2rem;
+        }
+    }
+
+    a .para {
+        margin-top: 1rem;
+        line-height: 1.5rem;
+    }
+
+}
+
+section .container .changelog-btn {
+    color: #F54E03;
+    text-decoration: none;
+}
+
+
+.career-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 5rem;
+    background: #1B1913;
+    border-radius: 4px;
+
+    .career-text-content {
+        color: var(--text-color);
+        width: 32%;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.8rem;
+
+        p {
+            color: var(--text-color);
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+
+        a {
+            color: #F54E03;
+            margin-top: 1.5rem;
+            text-decoration: none;
+        }
+
+    }
+
+    .career-media-content {
+        width: 68%;
+        height: 57ch;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            border-radius: 4px;
+            height: 96%;
+            width: 96%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+    }
+}
+
+.highlights-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    div h2 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .highlights-cards {
+        grid-column: span 2;
+
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .span-card {
+            background-color: #201E18;
+            padding: 1rem;
+
+            a .card-top {
+                display: flex;
+                flex-direction: column;
+                line-height: 1.4rem;
+
+                p+p {
+                    color: #999896;
+                }
+            }
+
+            a .card-bottom {
+                display: flex;
+                margin-top: 2rem;
+                color: #999896;
+            }
+        }
+
+        .blog-btn {
+            margin-top: 1.5rem;
+            color: #F54E03;
+            text-decoration: non e;
+        }
+    }
+}
+
+.cta-container {
+    padding: 4rem 0;
+
+    h2 {
+        font-size: 4.5rem;
+        font-weight: 400;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+
+        .download-btn {
+            padding: 1rem 1.5rem;
+            border-radius: 2rem;
+            background-color: #edecec;
+            color: #1D1B15;
+            cursor: pointer;
+        }
+    }
 }
