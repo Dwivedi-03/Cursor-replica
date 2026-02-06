@@ -668,3 +668,62 @@ section .container .changelog-btn {
         }
     }
 }
+
+footer {
+    padding: 3rem 0;
+
+    nav {
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        padding-bottom: 6rem;
+
+        div {
+            width: 100%;
+
+            h3 {
+                font-family: "CursorGothic", "CursorGothic Fallback", system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-size: 1rem;
+                color: #9A9996;
+                line-height: 1.5;
+                font-weight: normal;
+                padding-bottom: 0.5rem;
+            }
+
+            h3+ul {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+
+                li {
+                    list-style-type: none;
+                    font-size: 0.9rem;
+                    padding: 0.5rem 0;
+
+                    a {
+                        color: var(--text-color);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright-text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+
+        p {
+            font-size: 13px;
+            color: #A8A6A4;
+
+            a {
+                text-decoration: none;
+                color: #A8A6A4;
+
+            }
+        }
+    }
+}
