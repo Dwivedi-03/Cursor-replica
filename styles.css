@@ -1,6 +1,17 @@
 :root {
     --text-color: #edecec;
+    --text-primary: #DFECEC;
+    --text-secondary: #999896;
+    --text-accent: #F54E03;
+
     --bg-color: #14120b;
+    --bg-primary: #1D1B15;
+    --bg-secondary: #0000;
+    --bg-tertiary: #1B1913;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 * {
@@ -11,7 +22,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    color: #DFECEC;
+    color: var(--text-primary);
     background-color: var(--bg-color);
 }
 
@@ -47,10 +58,10 @@ header .logo {
 .nav_link {
     cursor: pointer;
     font-size: .875rem;
-    color: #DFECEC;
+    color: var(--text-primary);
     padding-inline: 1rem;
-    background-color: #0000;
-    border: 1px solid #0000;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--bg-secondary);
     display: inline-flex;
 }
 
@@ -72,7 +83,7 @@ header a {
 .relative button {
     background-color: transparent;
     border: none;
-    color: #DFECEC;
+    color: var(--text-primary);
     font-size: 15px;
     cursor: pointer;
 }
@@ -90,7 +101,7 @@ header a {
     width: 280px;
     left: 0;
     font-size: 14px;
-    background-color: #1B1913;
+    background-color: var(--bg-tertiary);
     padding: 1rem;
     border: 2px solid #26241E;
     border-radius: 4px;
@@ -110,7 +121,7 @@ header a {
 }
 
 .card ul li a {
-    color: #DFECEC;
+    color: var(--text-primary);
     display: inline-flex;
 }
 
@@ -123,7 +134,7 @@ header a {
 }
 
 .card ul li a:hover {
-    color: #A8A6A4;
+    color: var(--text-secondary);
 }
 
 .header-buttons {
@@ -141,7 +152,7 @@ header a {
     border: 1px solid #3F3D38;
     border-radius: 16px;
     font-size: 14px;
-    color: #DFECEC;
+    color: var(--text-primary);
     background-color: transparent;
     cursor: pointer;
 
@@ -247,7 +258,7 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: #1B1913;
+    background-color: var(--bg-tertiary);
     margin-top: 1.5rem;
     border-radius: 4px;
 }
@@ -264,14 +275,14 @@ section {
     display: flex;
     gap: 1rem;
     margin-bottom: 5rem;
-    background: #1D1B15;
+    background: var(--bg-primary);
     border-radius: 4px;
 }
 
 .last-content-container {
     display: flex;
     gap: 1rem;
-    background: #1D1B15;
+    background: var(--bg-primary);
     border-radius: 4px;
 }
 
@@ -289,13 +300,13 @@ section {
 }
 
 .container .text-content p {
-    color: #9A9996;
+    color: var(--text-secondary);
     font-size: 1.4rem;
     font-weight: 500;
 }
 
 .container .text-content a {
-    color: #F54E03;
+    color: var(--text-accent);
     margin-top: 1.5rem;
     text-decoration: none;
 }
@@ -366,7 +377,7 @@ section {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    background-color: #1B1913;
+    background-color: var(--bg-tertiary);
 }
 
 .card-container {
@@ -390,13 +401,13 @@ section {
 }
 
 .card-container .top p {
-    color: #9A9996;
+    color: var(--text-secondary);
     font-weight: 500;
     padding-bottom: 1rem;
 }
 
 .card-container .top a {
-    color: #F54E03;
+    color: var(--text-accent);
     text-decoration: none;
 }
 
@@ -442,7 +453,7 @@ section {
 
 .testimonial-card {
     border-radius: 4px;
-    background-color: #1B1913;
+    background-color: var(--bg-tertiary);
     padding: 1rem;
     min-height: 200px;
     height: 100%;
@@ -479,7 +490,7 @@ section {
 .testimonial-card figure figcaption span {
     font-size: 14px;
     font-weight: 500;
-    color: #999896;
+    color: var(--text-secondary);
 }
 
 .changelog-heading h2 {
@@ -497,7 +508,7 @@ section {
 }
 
 .changelog-cards article {
-    background-color: #1B1913;
+    background-color: var(--bg-tertiary);
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -522,12 +533,12 @@ section .container {
         display: flex;
         align-items: center;
         column-gap: 1rem;
-        color: #999896;
+        color: var(--text-secondary);
 
         span {
             padding: 2px 8px;
             font-size: 14px;
-            border: 1px solid #999896;
+            border: 1px solid var(--text-secondary);
             border-radius: 2rem;
         }
     }
@@ -540,7 +551,7 @@ section .container {
 }
 
 section .container .changelog-btn {
-    color: #F54E03;
+    color: var(--text-accent);
     text-decoration: none;
 }
 
@@ -549,7 +560,7 @@ section .container .changelog-btn {
     display: flex;
     gap: 1rem;
     margin-bottom: 5rem;
-    background: #1B1913;
+    background: var(--bg-tertiary);
     border-radius: 4px;
 
     .career-text-content {
@@ -568,7 +579,7 @@ section .container .changelog-btn {
         }
 
         a {
-            color: #F54E03;
+            color: var(--text-accent);
             margin-top: 1.5rem;
             text-decoration: none;
         }
@@ -625,21 +636,21 @@ section .container .changelog-btn {
                 line-height: 1.4rem;
 
                 p+p {
-                    color: #999896;
+                    color: var(--text-secondary);
                 }
             }
 
             a .card-bottom {
                 display: flex;
                 margin-top: 2rem;
-                color: #999896;
+                color: var(--text-secondary);
             }
         }
 
         .blog-btn {
             margin-top: 1.5rem;
-            color: #F54E03;
-            text-decoration: non e;
+            color: var(--text-accent);
+            text-decoration: none;
         }
     }
 }
@@ -662,8 +673,8 @@ section .container .changelog-btn {
         .download-btn {
             padding: 1rem 1.5rem;
             border-radius: 2rem;
-            background-color: #edecec;
-            color: #1D1B15;
+            background-color: var(--text-color);
+            color: var(--bg-primary);
             cursor: pointer;
         }
     }
@@ -684,7 +695,7 @@ footer {
             h3 {
                 font-family: "CursorGothic", "CursorGothic Fallback", system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
                 font-size: 1rem;
-                color: #9A9996;
+                color: var(--text-secondary);
                 line-height: 1.5;
                 font-weight: normal;
                 padding-bottom: 0.5rem;
@@ -717,11 +728,11 @@ footer {
 
         p {
             font-size: 13px;
-            color: #A8A6A4;
+            color: var(--text-secondary);
 
             a {
                 text-decoration: none;
-                color: #A8A6A4;
+                color: var(--text-secondary);
 
             }
         }
